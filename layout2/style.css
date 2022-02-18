@@ -1,0 +1,33 @@
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1.5fr 0.7fr ;
+    grid-template-areas: 
+    "main main main"
+    "content1 content2 content3"
+    "footer footer footer";
+    column-gap: 0.3rem;
+    row-gap: 0.3rem;
+
+}
+main{
+    background-color:#F76E11 ;
+    grid-area: main;
+}
+#content1 {
+    background-color: #FF9F45;
+    grid-area: content1;
+}
+#content2{
+    background-color: #FFBC80;
+    grid-area: content2;
+}
+#content3{
+    background-color: #FF9F45;
+    grid-area: content3;
+}
+footer{
+    background-color: #FC4F4F;
+    grid-area: footer;
+}
